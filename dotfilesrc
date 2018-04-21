@@ -3,4 +3,8 @@ repository = /data/Downloads/Repos/dotfiles
 ignore = [
     '.git',
     '.gitignore',
+	'node_modules',
+	'package-lock.json',
+	'package.json',
+	'.commitlintrc.js',
     '*.swp']
