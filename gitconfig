@@ -3,7 +3,7 @@
 	excludesfile = ~/.gitignore
 [user]
 	name = Liu Peng
-	email = liupeng@yandex.com
+	email = newalto@aliyun.com
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short  
 	xlog = log --oneline --decorate
