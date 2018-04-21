@@ -1,0 +1,6 @@
+[dotfiles]
+repository = /data/Downloads/Repos/dotfiles
+ignore = [
+    '.git',
+    '.gitignore',
+    '*.swp']
