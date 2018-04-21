@@ -23,3 +23,5 @@ export JAVA_HOME PATH
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace/sublime
 source $HOME/.local/bin/virtualenvwrapper.sh
+
+export EDITOR=vim
