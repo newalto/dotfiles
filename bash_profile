@@ -21,7 +21,7 @@ CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
 
 export JAVA_HOME PATH
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/workspace/sublime
+export PROJECT_HOME=$DATA/workspace/sublime
 source $HOME/.local/bin/virtualenvwrapper.sh
 
 export EDITOR=vim
