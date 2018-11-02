@@ -31,3 +31,7 @@ if [ -n "$SSH_CLIENT" -a -n "$DISPLAY" ]; then
      export $(dbus-launch) >& /dev/null
   fi
 fi
+
+if [ -n "$WORKON_HOME" ] && [ -f $HOME/.local/bin/virtualenvwrapper.sh ] ; then
+    source $HOME/.local/bin/virtualenvwrapper.sh
+fi
