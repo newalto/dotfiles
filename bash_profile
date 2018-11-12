@@ -37,4 +37,8 @@ if [ -n "$SSH_CLIENT" -a -n "$DISPLAY" ]; then
   fi
 fi
 
+# ~/.config/systemd/user/ssh-agent.service
+# Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
