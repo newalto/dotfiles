@@ -1,5 +1,5 @@
 [dotfiles]
-repository = /data/Downloads/Repos/dotfiles
+repository = /data/NetDisk/Repos/dotfiles
 packages = ['config']
 ignore = [
     '.git',
