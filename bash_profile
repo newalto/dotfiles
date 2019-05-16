@@ -16,6 +16,7 @@ CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
 [ -d $APPS/nodejs/bin ] && PATH=$APPS/nodejs/bin:$PATH
 [ -d $APPS/ant/bin ] && PATH=$APPS/ant/bin:$PATH
 [ -d $HOME/.node_modules/bin ] && PATH=$HOME/.node_modules/bin:$PATH
+PATH=$APPS/bin:$PATH
 
 export JAVA_HOME PATH
 export WORKON_HOME=$HOME/.virtualenvs
