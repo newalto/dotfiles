@@ -16,3 +16,5 @@ PS1='[\u@\h \W]\$ '
 # Alias definitions.
 alias ls='ls --color=auto'
 alias rm='trash-put'
+
+#[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
