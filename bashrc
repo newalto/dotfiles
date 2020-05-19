@@ -17,4 +17,6 @@ PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
 alias rm='trash-put'
 
-#[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+if [ "$WINDOWID" != "" ]; then
+  [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+fi
