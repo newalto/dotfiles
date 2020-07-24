@@ -102,6 +102,7 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias rm='trash-put'
+alias psc='ps xawf -eo pid,user,cgroup,args'
 
 xhost +local:root > /dev/null 2>&1
 
