@@ -69,7 +69,9 @@ endif
 
 "Set mapleader
 "let mapleader = ","
+let mapleader = "\ "
 "let g:mapleader = ","
+nnoremap <Leader>a :echo "Hey there ,"<CR>
 
 "No sound on errors.
 set noerrorbells
@@ -314,6 +316,8 @@ endfunction
 call EnsureDirExists($HOME . '/.vim_backup')
 call EnsureDirExists($HOME . '/.vim_tmp')
 " }}}
+
+"so ~/.vimwikirc
 
 "autocmd vimenter * if argc() | NERDTree | endif
 " vim:ft=vim:fdm=marker:
