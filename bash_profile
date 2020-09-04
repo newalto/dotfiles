@@ -12,15 +12,14 @@ appendpath () {
     esac
 }
 
-#appendpath $HOME/.local/bin
+appendpath $HOME/.local/bin
 #appendpath $HOME/bin
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-DATA=$HOME
-
+[ -d /data ] && DATA=/data || DATA=$HOME
 APPS=$DATA/Apps
-JAVA_HOME=$APPS/jdk-14
+JAVA_HOME=$APPS/jdk
 
 [ -d $JAVA_HOME ] && { export JAVA_HOME=$JAVA_HOME; appendpath $JAVA_HOME/bin; }
 [ -d $APPS/maven/bin ] && appendpath $APPS/maven/bin
