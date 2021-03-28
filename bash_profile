@@ -25,7 +25,11 @@ JAVA_HOME=$APPS/jdk
 [ -d $APPS/maven/bin ] && appendpath $APPS/maven/bin
 [ -d $APPS/nodejs/bin ] && appendpath $APPS/nodejs/bin
 [ -d $APPS/ant/bin ] && appendpath $APPS/ant/bin
-[ -d $HOME/.node_modules/bin ] && appendpn $HOME/.node_modules/bin
+[ -d $HOME/.node_modules/bin ] && appendpath $HOME/.node_modules/bin
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+appendpath $GEM_HOME
+
 unset appendpath
 
 export PATH
@@ -34,3 +38,4 @@ export PROJECT_HOME=$HOME/workspace/sublime
 #source $HOME/.local/bin/virtualenvwrapper.sh
 
 export EDITOR=vim
+export HISTTIMEFORMAT='%d/%m/%y %T '
