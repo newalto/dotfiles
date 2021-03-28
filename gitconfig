@@ -1,9 +1,9 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
-[user]
-	name = Liu Peng
-	email = newalto@aliyun.com
+#[user]
+#	name = Liu Peng
+#	email = newalto@aliyun.com
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short  
 	xlog = log --oneline --decorate
@@ -16,3 +16,6 @@
 	sslVerify = false
 [push]
 	default = current
+[user]
+	name = liupeng
+	email = tux-liupeng@qq.com
