@@ -17,6 +17,10 @@ PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
 alias rm='trash-put'
 
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
 if [ "$WINDOWID" != "" ]; then
   [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 fi
