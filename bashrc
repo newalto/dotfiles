@@ -30,7 +30,6 @@ else
     PS1="$PURPLE\u$nc@$CYAN\H$nc:$GREEN\w$nc\\n$GREEN\$$nc "
 fi
 
-
 # Alias definitions.
 alias ls='ls --color=auto'
 alias ll='ls -lh'
@@ -41,6 +40,10 @@ alias rm='trash-put'
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
+
+# Add sbin directories to PATH.  This is useful on systems that have sudo
+echo $PATH | grep -Eq "(^|:)/sbin(:|)"     || PATH=$PATH:/sbin
+echo $PATH | grep -Eq "(^|:)/usr/sbin(:|)" || PATH=$PATH:/usr/sbin
 
 if [ "$WINDOWID" != "" ]; then
   [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
