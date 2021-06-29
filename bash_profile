@@ -15,8 +15,6 @@ appendpath () {
 appendpath $HOME/.local/bin
 #appendpath $HOME/bin
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
 [ -d /data ] && DATA=/data || DATA=$HOME
 APPS=$DATA/Apps
 JAVA_HOME=$APPS/jdk
@@ -39,3 +37,5 @@ export PROJECT_HOME=$HOME/workspace/sublime
 
 export EDITOR=vim
 export HISTTIMEFORMAT='%d/%m/%y %T '
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
