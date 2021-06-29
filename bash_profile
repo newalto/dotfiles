@@ -38,4 +38,12 @@ export PROJECT_HOME=$HOME/workspace/sublime
 export EDITOR=vim
 export HISTTIMEFORMAT='%d/%m/%y %T '
 
+# Begin protected block
+if [ -t 0 ]; then       # check for a terminal
+  [ x"$TERM" = x"wy30" ] && stty erase ^h       # sample legacy environment
+  echo "Welcome to Debian, $LOGNAME"
+  #/usr/games/fortune
+fi
+# End protected block
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
